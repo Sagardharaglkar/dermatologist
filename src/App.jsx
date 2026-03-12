@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-
+import { Analytics } from "@vercel/analytics/react"
 // ============================================================
 //  🏥 CLINIC CONFIGURATION — Edit this section for each client
 // ============================================================
@@ -1243,6 +1243,7 @@ export default function App() {
       <main>{pages[page]}</main>
       <Footer setPage={navigate} />
       <WhatsAppBtn fixed />
+      <Analytics />
     </div>
   );
 }
